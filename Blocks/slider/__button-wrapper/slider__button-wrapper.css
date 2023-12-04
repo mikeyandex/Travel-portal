@@ -1,0 +1,18 @@
+.slider__button-wrapper {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  margin: 0 auto;
+  padding-right: 2.5vw;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__button-wrapper {
+    padding: 1px 0 0 0;
+    margin: 0 auto;;
+    display: flex;
+    justify-content: center;
+  }
+}
+

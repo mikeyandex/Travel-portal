@@ -1,0 +1,22 @@
+.slider__image {
+  width: 55.5vw;
+  aspect-ratio: 1/1;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 4;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__image {
+    width: 92.31vw;
+    height: calc(92.31vw * .583);
+    margin-right: 0;
+    padding: 0;
+    aspect-ratio: auto;
+    justify-self: center;
+  }
+
+  .slider__image:last-of-type {
+    justify-self: center;
+  }  
+}

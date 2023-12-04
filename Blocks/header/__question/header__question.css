@@ -1,0 +1,47 @@
+.header__question {
+  font-family: Aleo;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2.7rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #F2785C;
+  padding: 0 0 0 41px;
+  width: 100%;
+  border-width: 0;
+  background: none;
+}
+
+.header__question::placeholder {
+  font-family: Aleo;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2.7rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #F2785C;
+  padding: 0 0 0 41px;
+  width: 100%;
+}
+
+.header__question:focus {
+  font-family: Aleo;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 2.7rem;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #F2785C;
+  padding: 0 0 0 41px;
+  width: 100%;
+  border-width: 0;
+}
+ 
+.header__question:active {
+  border-width: 0;
+}
+
+

@@ -1,0 +1,9 @@
+.steps__icon_margin {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .steps__icon_margin {
+    margin: 0 6vw;
+  }
+}

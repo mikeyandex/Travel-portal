@@ -1,0 +1,31 @@
+.slider__image-title {
+position: absolute;
+bottom: 5.1%;
+left: 2%;
+text-align: left;
+font-size: 2.1vw;
+color: #ffffff;
+z-index: 4;
+text-transform: uppercase;
+}
+
+@media screen and (max-width: 1280px) {
+  .slider__image-title {
+    font-size: 15.5px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .slider__image-title {
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .slider__image-title {
+    top: 0;
+    left: 7.5%;
+    font-size: 20px;
+  }
+}

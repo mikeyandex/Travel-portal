@@ -1,0 +1,13 @@
+.steps__icons-title {
+  font-size: 2.77vw;
+  color: #F2785C;
+  width: 100%;
+  padding-top: 4.7vw;
+}
+
+@media screen and (max-width: 768px) {
+  .steps__icons-title {
+    font-size: 14px;
+    padding-top: 0;
+  }
+}

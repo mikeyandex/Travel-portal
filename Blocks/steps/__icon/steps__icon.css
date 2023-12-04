@@ -1,0 +1,16 @@
+.steps__icon {
+  width: 7vw;
+  aspect-ratio: 1/1;
+  background-image: url('../../../images/logo1.svg');
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+
+
+@media screen and (max-width: 768px) {
+  .steps__icon {
+    width: 18vw;
+    border-radius: 15px;
+    margin: 0 auto;
+  }
+}

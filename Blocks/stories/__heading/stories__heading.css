@@ -1,0 +1,13 @@
+.stories__heading {
+position: relative;
+left: 0;
+top: -11.8vw;
+padding-top: 5.7vw;
+}
+
+@media screen and (max-width: 768px) {
+  .stories__heading  {
+    left: 0;
+    top: -7.8rem;
+  }
+}

@@ -1,0 +1,14 @@
+.slider__window {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__window {
+    margin-bottom: 0;
+  }
+}

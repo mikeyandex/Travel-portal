@@ -1,0 +1,17 @@
+.slider__ellipse {
+  width: 1.5vw;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background: #F2785C80;
+}
+
+  @media screen and (max-width: 768px) {
+    .slider__ellipse {
+      width: .5rem;
+      margin-right: 1.5vw;
+    }
+  }
+
+  .slider__ellipse:last-of-type {
+    margin-right: 0;
+  }

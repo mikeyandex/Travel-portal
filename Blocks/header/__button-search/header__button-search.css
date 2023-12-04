@@ -1,0 +1,16 @@
+.header__button-search {
+  width: 16vw;
+  height: 4.4vw;
+  margin: 0 1.2vw 0 0;
+  font-size: 1.65vw;
+}
+
+@media screen and (max-width: 768px) {
+  .header__button-search {
+    display: block;
+    width: 24vw;
+    height: 8.4vw;
+    margin: 0 2.2vw 0 0;
+    font-size: 2.8vw;
+  }
+}
