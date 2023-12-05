@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'RedHatText-VariableFont_wght';
+  src: url(./RedHatText-VariableFont_wght.woff) format('woff'),
+       url(./RedHatText-VariableFont_wght.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Magra-Regular';
+  src: url(./Magra-Regular.woff) format('woff'),
+       url(./Magra-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Magra-Bold';
+  src: url(./Magra-Bold.woff) format('woff'),
+       url(./Magra-Bold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Aleo-VariableFont_wght';
+  src: url(./Aleo-VariableFont_wght.woff) format('woff'),
+       url(./Aleo-VariableFont_wght.woff2) format('woff2');
+}

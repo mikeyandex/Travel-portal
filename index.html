@@ -1,0 +1,164 @@
+<html lang="ru">
+<!DOCTYPE html>
+
+<head>
+  <title>Travel portal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./pages/index.css" rel="stylesheet">
+</head>
+
+<body class="page">
+
+  <header class="header">
+
+    <div class="header__top">
+      <div class="header__logo"></div>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item">How It Works</li>
+          <li class="header__item">Plan Your Trip</li>
+          <li class="header__item">Destinations</li>
+          <li class="header__item">Travel Stories</li>
+        </ul>
+      </nav>
+      <div class="header__hamburger"></div>
+      <button class="header__button" type="button">Login</button>
+    </div>
+    <h1 class="header__heading">Explore the beauty of the&nbspWorld</h1>
+    <h2 class="header__comment">Receive personalized recommendations for countries, hotels, activities and more</h2>
+
+    <form class="header__search" method="get">
+      <input class="header__input" type="text" id="search" name="search" required minlength="4" maxlength="50" size="45"
+        placeholder="What would you like to do?" class="header__question">
+      <button class="header__button header__button-search" type="button">Start Planning</button>
+    </form>
+
+  </header>
+
+  <main class="main">
+    <section class="steps">
+      <h2 class="header__button-title steps__icons-title">3 STEPS TO THE PERFECT TRIP</h2>
+      <div class="steps__wrapper">
+        <div class="steps__icon-wrapper">
+          <div class="steps__icon"></div>
+          <p class="steps__icon-comment">Tell us what you want&nbspto do</p>
+        </div>
+        <div class="steps__icon-wrapper">
+          <div class="steps__icon steps__icon_image2 steps__icon_margin"></div>
+          <p class="steps__icon-comment steps__icon-comment_margin-0-auto">Share us preferable dates </p>
+        </div>
+        <div class="steps__icon-wrapper">
+          <div class="steps__icon steps__icon_image3"></div>
+          <p class="steps__icon-comment steps__icon-comment-right">We will give you recommendations</p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="slider">
+      <h2 class="header__button-title steps__icons-title slider__title">POPULAR DESTINATIONS</h2>
+      <div class="slider__window">
+        <div class="slider__box">
+          <div class="slider__arrows">
+            <div class="slider__arrow"></div>
+            <div class="slider__arrow slider__arrow-right"></div>
+          </div>
+          <div class="slider__image-wrapper">
+            <image class="slider__image" src="./images/reefs.png" alt="Рифы на мелководье">
+              <p class="header__button-title steps__icons-title slider__image-title">SPAIN</p>
+          </div>
+          <div class="slider__image-wrapper">
+            <image class="slider__image" src="./images/chinaBay.png" alt="Вид на морской залив в Азии">
+              <p class="header__button-title steps__icons-title slider__image-title">JAPAN</p>
+          </div>
+          <div class="slider__image-wrapper">
+            <image class="slider__image" src="./images/bridge.png" alt="Большой подвесной мост">
+
+              <p class="header__button-title steps__icons-title slider__image-title">USA</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider__switches">
+        <div class="slider__ellipse"></div>
+        <div class="slider__ellipse"></div>
+        <div class="slider__ellipse"></div>
+      </div>
+      <div class="slider__button-wrapper">
+        <div class="stories__arrowRight"></div>
+        <button class="slider__button" type="button">Find More</button>
+      </div>
+    </section>
+    <section class="stories">
+      <div class="stories__background-opacity"></div>
+      <h2 class="header__button-title steps__icons-title stories__heading">TRAVEL STORIES</h2>
+
+      <div class="stories__table">
+        <image class="stories__image" src='./images/mountainLake.png' alt="Море в Тайланде">
+          <div class="stories__table-wrapper">
+            <h3 class="stories__title">10 Photos of Attractive Thailand</h3>
+            <p class="stories__comment stories__comment_first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit...</p>
+            <p class="stories__comment stories__comment-weight700">Read More</p>
+          </div>
+          <image class="stories__image" src='./images/road.png' alt="Дорога в национальном парке в штате Юта">
+            <div class="stories__table-wrapper">
+              <h3 class="stories__title">Canyonlands National Park, Utah</h3>
+              <p class="stories__comment stories__comment_first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit...</p>
+              <p class="stories__comment stories__comment-weight700">Read More</p>
+            </div>
+            <image class="stories__image" src='./images/snowMountains.png' alt="Заснеженный горный хребет">
+              <div class="stories__table-wrapper">
+                <h3 class="stories__title">I left my heart in the Mountains!</h3>
+                <p class="stories__comment stories__comment_first">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit...</p>
+                  <p class="stories__comment stories__comment-weight700">Read More</p>
+              </div>
+              <image class="stories__image" src='./images/yellowMinivan.png'
+                alt="Желтый минивен едет по дороге среди скал в американских прериях">
+                <div class="stories__table-wrapper">
+                  <h3 class="stories__title">The Longest journey in my life!</h3>
+                  <p class="stories__comment stories__comment_first">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                  <p class="stories__comment stories__comment-weight700">Read More</p>
+                </div>
+      </div>
+      <div class="stories__button-wrapper stories__button-wrapper_padding-right">
+        <div class="stories__arrowRight"></div>
+        <button class="slider__button" type="button">See More</button>
+      </div>
+
+      <div class="footer">
+        <p class="footer__rights">All Rights Reserved © Travel Portal</p>
+        <div class="footer__links">
+          <div class="footer__link"></div>
+          <div class="footer__link footer__link_youtube"></div>
+          <div class="footer__link footer__link_twitter"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <script src="./pages/index.js"></script>
+</body>
+
+</html>
