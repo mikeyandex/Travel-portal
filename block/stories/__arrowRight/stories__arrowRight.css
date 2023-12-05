@@ -1,0 +1,17 @@
+.stories__arrowRight {
+width: 3vw;
+height: 1.63vw;
+background-image: url("../../../images/ArrowRight.svg");
+background-size: 100% 100%;
+position: absolute;
+left: 23.5%;
+top: 31%;
+z-index: 5;
+}
+
+@media screen and (max-width: 768px) {
+  .stories__arrowRight {
+    left: 2.9vw;
+    top: calc(50% - 1.63vw/2);
+  }
+}

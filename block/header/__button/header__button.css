@@ -1,0 +1,37 @@
+.header__button {
+  width: 7.3vw;
+  height: 2.9vw;
+  background-color: #124C5F;
+  box-shadow: 0px 2px 3px 0px #0D606F29;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 10px;
+  margin: .35vw 0 0 2.6vw;
+  font-family: RedHatText-VariableFont_wght;
+  font-size: 1.1vw;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  align-self: center;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1280px) {
+  .header__button {
+    width: 9.3vw;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header__button {
+    width: 9.3vw;
+    height: calc(.398 * 9.3vw);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__button {
+    display: none;
+  }
+}

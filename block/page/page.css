@@ -1,0 +1,42 @@
+.page {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Aleo-VariableFont_wght';
+  font-family: 'Magra-Regular';
+  font-family: 'RedHatText-VariableFont_wght';
+  background-color: #ffffff;
+  max-width: 1440px;
+  min-width: 390px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  position: relative; 
+  z-index: -5;
+}
+
+
+
+/* {
+  border: solid 1px red;
+}*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+input[type="text"] {
+  font-family: inherit;
+  font-size: inherit; 
+  line-height: inherit;
+  margin: 0; 
+  padding: 0;
+  background: none;
+  border-width: 0;
+}
+
+input[type="text"]:focus-visible {
+    outline: none;
+  }

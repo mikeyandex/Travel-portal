@@ -1,0 +1,17 @@
+.slider__arrows {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__arrows {
+    width: 92.31%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    top: 45%;
+    position: absolute;
+    z-index: 5;
+    margin: 0 3.845%;
+  }
+}

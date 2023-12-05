@@ -1,0 +1,9 @@
+.slider__title {
+padding: .4rem 0 3.125rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__title {
+padding: .5rem 0 .45rem 0;
+  }
+}

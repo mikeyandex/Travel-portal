@@ -1,0 +1,13 @@
+.slider__arrow-right {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .slider__arrow-right {
+    background-image: url('../../../images/arrow-right.png');
+    display: block;
+    top: 0;
+    left: 92.6%;
+    
+  } 
+}
