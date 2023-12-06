@@ -5,7 +5,7 @@
   z-index: -1;
   background-image: url('../../images/stories.png');
   background-position: 100% 100%;
-  display: grid;
+  display: block;
   padding-bottom: 6.25rem;
 }
 

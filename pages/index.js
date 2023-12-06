@@ -50,8 +50,21 @@ const storiesDesktop = () => {
   storiesImage[3].src = './images/yellowMinivan.png';
 }
 
+//Оформление подписей под иконками
+const stepsIconMobile = () => {
+  console.log('stepsIconMobile')
+comment[0].className += ' steps__icon-comment-left';
+comment[2].className += ' steps__icon-comment-right';
+icon[0].className += ' steps__icon-left';
+icon[2].className += ' steps__icon-right';
+
+icon[1].classList.add('steps__icon-comment_width');
+icon[1].classList.add('steps__icon-comment_margin-0-auto');
+}
+
 //Начальные установки
-if (window.screen.availWidth < 768) {
+if (window.innerWidth < 768) {
+  console.log(innerWidth)
 
   indicator[0].className = 'slider__ellipse slider__ellipse_backcolor';
   sliderImage[1].className = 'slider__image slider__image_display-none';
@@ -59,6 +72,7 @@ if (window.screen.availWidth < 768) {
 
   storiesMobile();
   storiesCommentMobile();
+  stepsIconMobile();
 }
 else {
   counter = 1;
@@ -126,6 +140,7 @@ const sliderDesktop = (counter) => {
   }
 }
 
+
 //Слушатели стрелки на экране
 sliderLeft.addEventListener('click', () => {
   sliderImage[counter].className += ' slider__image_display-none';
@@ -167,7 +182,7 @@ document.addEventListener('keydown', (event) => {
 
 window.addEventListener(`resize`, event => {
 
-  if (window.screen.availWidth < 768) {
+  if (window.innerWidth < 768) {
 
     if (desktop == 1) {
       sliderImage[1].className = 'slider__image slider__image_display-none';
@@ -184,14 +199,7 @@ window.addEventListener(`resize`, event => {
     storiesCommentMobile();
 
     //Оформление подписей под иконками
-    comment[0].className += ' steps__icon-comment-left';
-    comment[2].className += ' steps__icon-comment-right';
-    icon[0].className += ' steps__icon-left';
-    icon[2].className += ' steps__icon-right';
-
-    icon[1].classList.add('steps__icon-comment_width');
-    icon[1].classList.add('steps__icon-comment_margin-0-auto');
-
+    stepsIconMobile();
   }
   else {
 
