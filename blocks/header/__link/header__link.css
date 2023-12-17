@@ -1,0 +1,10 @@
+.header__link {
+  font-family: 'RedHatText-VariableFont_wght';
+  font-size: 1.11vw;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}

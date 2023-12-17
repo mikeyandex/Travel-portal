@@ -1,0 +1,20 @@
+.header__button-close {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__button-close {
+    display: block;
+    cursor: pointer;
+    width: 4vw;
+    aspect-ratio: 1/1;
+    top: 4vw;
+    left: 4vw;
+    position: absolute;
+    background-image: url('../../../images/cross.png');
+    background-position: 100% 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+  }
+}

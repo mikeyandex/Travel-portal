@@ -1,0 +1,14 @@
+.header__hamburger-item {
+display: none;
+}
+
+@media screen and (max-width: 767.9px) {
+  .header__hamburger-item {
+    text-align: right;
+    display: block;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 2.5vw;
+    width: 100%;
+  }
+}

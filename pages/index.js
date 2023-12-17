@@ -14,6 +14,14 @@ const storiesImage = document.querySelectorAll('.stories__image');
 
 const storiesComment = document.querySelectorAll('.stories__comment_first');
 
+//попапы
+const loginButton = document.querySelector('.header__button');//кнопка в хедере
+const popup = document.querySelector('.popup')//фон с зетемнением
+const popupLogin = document.querySelector('.popup__login');//попап с логином
+const signUpPopup = document.querySelector('.popup__register');//открыть попап регистрации
+
+
+
 let counter = 0;// текущая позиция
 let desktop = 0;
 
@@ -52,7 +60,7 @@ const storiesDesktop = () => {
 
 //Оформление подписей под иконками
 const stepsIconMobile = () => {
-  console.log('stepsIconMobile')
+
 comment[0].className += ' steps__icon-comment-left';
 comment[2].className += ' steps__icon-comment-right';
 icon[0].className += ' steps__icon-left';
@@ -232,3 +240,50 @@ window.addEventListener(`resize`, event => {
 
 
 
+//вызов попапа
+loginButton.addEventListener('mousedown', () => {
+  popup.classList.add('popup_opened');
+})
+
+
+
+
+
+ 
+popup.addEventListener('mousedown', function(event) {
+
+  if (event.target.classList.contains('popup')) {
+  popup.classList.remove('popup_opened');
+  }
+})
+
+popupLogin.addEventListener('mousedown', function(event) {
+console.log(popupLogin.className)
+  if (event.target.classList.contains('popup')) {
+  popupLogin.classList = 'popup popup__login';
+  }
+})
+
+signUpPopup.addEventListener('click', () => {
+  console.log("signUpPopup")
+  popup.classList.remove('popup_opened');
+  popupLogin.classList.add('popup_opened');   
+})
+
+const hamburger = document.querySelector('.header__hamburger');
+const hamMenu = document.querySelector('.header__hamburger-menu');
+const closeHam = document.querySelector('.header__button-close');//кнопка закрытия гамбургера
+const account = document.querySelectorAll('.header__ham-link');//массив меню гамбургер
+
+
+hamburger.onclick = function() {
+	hamMenu.classList.add('header__hamburger-menu_opened');
+}
+
+closeHam.onclick = function() {
+	hamMenu.classList.remove('header__hamburger-menu_opened');
+}
+
+account[4].onclick = function() {
+	popup.classList.add('popup_opened'); 
+}

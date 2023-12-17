@@ -1,0 +1,10 @@
+.popup__question {
+  font-family: 'Aleo-VariableFont_wght';
+  font-size: 1vw;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color:rgba(13, 96, 111, 0.5);
+  margin: 0;
+}

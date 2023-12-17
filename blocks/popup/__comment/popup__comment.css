@@ -1,0 +1,12 @@
+.popup__comment {
+  font-family: 'RedHatText-VariableFont_wght';
+  font-size: 1.43vw;
+  font-weight: 400;
+  line-height: 3.95vw;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 0;
+  text-decoration: none;
+}
+

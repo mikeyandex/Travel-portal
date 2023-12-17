@@ -1,0 +1,10 @@
+.popup__wrapper-comment {
+  font-family: 'Aleo-VariableFont_wght';
+  font-size: 1.4vw;
+  font-weight: 700;
+  line-height: 0;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #0D606F;
+  margin: 0;
+}

@@ -1,0 +1,11 @@
+.popup__container {
+  width: 45vw;
+  height: fit-content;
+  border-radius: 20px;
+  background: linear-gradient(177.09deg, #FFFFFF 6.15%, #0D606F 202.69%);
+  box-shadow: 0px 4px 4px 0px #00000040;
+  padding: 1.84vw 3vw 0 3vw;
+  position: relative;
+  z-index: 9999;
+}
+

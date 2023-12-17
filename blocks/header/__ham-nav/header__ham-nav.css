@@ -1,0 +1,9 @@
+.header__ham-nav {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__ham-nav {
+    display: block;
+  }
+}

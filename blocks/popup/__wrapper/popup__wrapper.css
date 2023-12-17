@@ -1,0 +1,7 @@
+.popup__wrapper {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  margin: 1.4vw 0 2.2vw 0;
+}

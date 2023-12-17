@@ -1,0 +1,9 @@
+.popup__heading {
+  font-size: 2.25vw;
+  line-height: 2.25vw;
+  letter-spacing: -.4px;
+  text-align: center;
+  font-style: normal;
+  color: #0D606F;
+  padding-bottom: 2.3vw;
+}
