@@ -1,4 +1,5 @@
 const comment = document.querySelectorAll('.steps__icon-comment');
+
 const icon = document.querySelectorAll('.steps__icon');
 
 const sliderImage = document.querySelectorAll('.slider__image');
@@ -6,6 +7,7 @@ const sliderImage = document.querySelectorAll('.slider__image');
 const sliderImageTitle = document.querySelectorAll('.slider__image-title');
 
 const sliderLeft = document.querySelector('.slider__arrow');
+
 const sliderRight = document.querySelector('.slider__arrow-right');
 
 const indicator = document.querySelectorAll('.slider__ellipse');
@@ -23,10 +25,10 @@ const signUpPopup = document.querySelector('.popup__register');//открыть 
 
 
 let counter = 0;// текущая позиция
-let desktop = 0;
+let desktop = 0;//индикатор десктоп или мобил
 
 //
-const storiesCommentMobile = () => {
+const storiesCommentMobile = () => {//текст в travel stories 
 
     storiesComment[0].textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...';
     storiesComment[1].textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.Lorem ipsum dolor sit a...';
@@ -35,7 +37,7 @@ const storiesCommentMobile = () => {
     
 }
 
-const storiesCommentDesktop = () => {
+const storiesCommentDesktop = () => {////текст в travel stories
 
     storiesComment[0].textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...';
     storiesComment[1].textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit...';
@@ -44,14 +46,14 @@ const storiesCommentDesktop = () => {
 
 }
 
-const storiesMobile = () => {
+const storiesMobile = () => {//фото мобил
   storiesImage[0].src = './images/lakeMobile.png';
   storiesImage[1].src = './images/roadMobile.png';
   storiesImage[2].src = './images/mountainMobile.png';
   storiesImage[3].src = './images/minivanMobile.png';
 }
 
-const storiesDesktop = () => {
+const storiesDesktop = () => {//фото десктоп
   storiesImage[0].src = './images/mountainLake.png';
   storiesImage[1].src = './images/road.png';
   storiesImage[2].src = './images/snowMountains.png';
@@ -72,7 +74,6 @@ icon[1].classList.add('steps__icon-comment_margin-0-auto');
 
 //Начальные установки
 if (window.innerWidth < 768) {
-  console.log(innerWidth)
 
   indicator[0].className = 'slider__ellipse slider__ellipse_backcolor';
   sliderImage[1].className = 'slider__image slider__image_display-none';
@@ -150,24 +151,21 @@ const sliderDesktop = (counter) => {
 
 
 //Слушатели стрелки на экране
-sliderLeft.addEventListener('click', () => {
+sliderLeft.onclick = () => {
   sliderImage[counter].className += ' slider__image_display-none';
   counter -= 1;
   if (counter <= -1) counter = 2;
   slider(counter);
   switches(counter);
-})
+}
 
-
-
-sliderRight.addEventListener('click', () => {
+sliderRight.onclick  = () => {
   sliderImage[counter].className += ' slider__image_display-none';
   counter += 1;
   if (counter >= 3) counter = 0;
   slider(counter);
   switches(counter);
 }
-)
 
 //Слушатели стрелки на клавиатуре
 document.addEventListener('keydown', (event) => {
@@ -270,6 +268,7 @@ signUpPopup.addEventListener('click', () => {
   popupLogin.classList.add('popup_opened');   
 })
 
+//гамбургер
 const hamburger = document.querySelector('.header__hamburger');
 const hamMenu = document.querySelector('.header__hamburger-menu');
 const closeHam = document.querySelector('.header__button-close');//кнопка закрытия гамбургера
