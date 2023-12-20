@@ -123,25 +123,25 @@ const slider = (counter) => {
 const sliderDesktop = (counter) => {
   switch (counter) {
     case 0:
-      sliderImage[0].src = './images/chinaBay.png';
-      sliderImageTitle[0].textContent = 'Japan';
       sliderImage[1].src = './images/reefs.png';
       sliderImageTitle[1].textContent = 'Spain';
-      sliderImage[2].src = './images/bridge.png';
+	  sliderImage[0].src = './images/chinaBay.png';
+      sliderImageTitle[0].textContent = 'Japan';
+	  sliderImage[2].src = './images/bridge.png';
       sliderImageTitle[2].textContent = 'USA';
       break;
     case 1:
-      sliderImage[0].src = './images/reefs.png';
+	  sliderImage[2].src = './images/bridge.png';
+      sliderImageTitle[2].textContent = 'USA';
+	  sliderImage[0].src = './images/reefs.png';
       sliderImageTitle[0].textContent = 'Spain';
       sliderImage[1].src = './images/chinaBay.png';
       sliderImageTitle[1].textContent = 'Japan';
-      sliderImage[2].src = './images/bridge.png';
-      sliderImageTitle[2].textContent = 'USA';
       break;
     case 2:
-      sliderImage[0].src = './images/chinaBay.png';
+	  sliderImage[0].src = './images/chinaBay.png';
       sliderImageTitle[1].textContent = 'Japan';
-      sliderImage[1].src = './images/bridge.png';
+	  sliderImage[1].src = './images/bridge.png';
       sliderImageTitle[1].textContent = 'USA';
       sliderImage[2].src = './images/reefs.png';
       sliderImageTitle[2].textContent = 'Spain';
@@ -186,6 +186,7 @@ document.addEventListener('keydown', (event) => {
   }
 })
 
+//слушатель изменения размера окна
 window.addEventListener(`resize`, event => {
 
   if (window.innerWidth < 768) {
